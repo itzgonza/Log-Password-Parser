@@ -17,7 +17,7 @@ public class PasswordParser {
     private static String type;
 
     public PasswordParser() {
-	path = System.getProperty("user.home") + "/Desktop/logs";
+	  path = System.getProperty("user.home") + "/Desktop/logs";
     }
 
     public void initialize() {
