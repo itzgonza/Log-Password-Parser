@@ -8,6 +8,9 @@ import java.util.Optional;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+/**
+ * @author ItzGonza
+ */
 public class PasswordParser {
 
     public transient static PasswordParser instance;
