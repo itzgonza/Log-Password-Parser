@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class PasswordParser {
 
-	public transient static PasswordParser instance;
+    public transient static PasswordParser instance;
 	
     private static List<String> founds = new ArrayList<>();
     private static String path;
@@ -25,7 +25,7 @@ public class PasswordParser {
         
         type = new Scanner(System.in).nextLine();
         if (type.isEmpty())
-        	return;
+            return;
 
         try {
             parse(type);
@@ -55,6 +55,7 @@ public class PasswordParser {
                                     if (username.length() > 1 & password.length() > 1) {
                                         if (username.contains("empty") | password.contains("empty"))
                                             continue;
+					    
                                         founds.add((username + ":" + password));
                                     }
                                 }
